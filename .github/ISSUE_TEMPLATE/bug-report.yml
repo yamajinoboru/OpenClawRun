@@ -1,0 +1,51 @@
+name: Bug report
+description: OpenClawRun の不具合報告
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 症状
+      description: 何が起きたかを簡潔に書いてください。
+      placeholder: Gateway Restartが失敗し、赤状態のままになる
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      placeholder: |
+        1. OpenClawRunを起動
+        2. Gateway Stopを押す
+        3. Gateway Restartを押す
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: OpenClawRun version
+      placeholder: v0.1.0
+
+  - type: input
+    id: openclaw_version
+    attributes:
+      label: OpenClaw version
+      placeholder: 2026.2.19-2
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: macOS 14.7
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: OpenClawRunの「Copy Diagnostics」を貼り付け
+      render: text
+    validations:
+      required: false
