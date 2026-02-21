@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an improvement for OpenClawRun
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea.
+        Any language is okay.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve?
+      placeholder: I want to install/update with fewer steps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should OpenClawRun do?
+      placeholder: Add a one-click installer wizard.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      placeholder: Screenshots, workflow details, related tools, etc.
+    validations:
+      required: false
