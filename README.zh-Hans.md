@@ -4,6 +4,10 @@
 
 OpenClawRun 是一个 macOS 菜单栏应用，可在无需终端命令的情况下管理 OpenClaw Gateway。
 
+## 菜单预览
+
+![OpenClawRun menu](./assets/menu-screenshot.png)
+
 ## 发布策略
 - 此仓库仅用于**发布与支持**
 - 源代码为闭源

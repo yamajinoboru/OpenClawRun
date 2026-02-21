@@ -4,6 +4,10 @@
 
 OpenClawRun は、OpenClaw Gateway をターミナル操作なしで扱うための macOS メニューバーアプリです。
 
+## メニュープレビュー
+
+![OpenClawRun menu](./assets/menu-screenshot.png)
+
 ## 配布方針
 - このリポジトリは **配布・サポート専用** です
 - ソースコードは非公開（closed source）運用です

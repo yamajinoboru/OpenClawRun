@@ -4,6 +4,10 @@
 
 OpenClawRun é um app de menu bar para macOS que permite gerenciar o OpenClaw Gateway sem comandos de terminal.
 
+## Prévia do menu
+
+![OpenClawRun menu](./assets/menu-screenshot.png)
+
 ## Política de distribuição
 - Este repositório é apenas para **distribuição e suporte**
 - O código-fonte é fechado (closed source)
