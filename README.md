@@ -2,6 +2,10 @@
 
 OpenClawRun is a macOS menu bar app for managing OpenClaw Gateway without terminal commands.
 
+## Menu Preview
+
+![OpenClawRun menu](./assets/menu-screenshot.png)
+
 ## Languages
 - [English](./README.md)
 - [日本語](./README.ja.md)
