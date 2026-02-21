@@ -1,25 +1,39 @@
 name: Bug report
-description: OpenClawRun の不具合報告
+description: Report a reproducible issue in OpenClawRun
 title: "[Bug] "
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the issue with simple steps.
+        Any language is okay.
+
   - type: textarea
     id: summary
     attributes:
-      label: 症状
-      description: 何が起きたかを簡潔に書いてください。
-      placeholder: Gateway Restartが失敗し、赤状態のままになる
+      label: What happened?
+      placeholder: Gateway restart fails and status stays red.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: Gateway should restart and become green.
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: 再現手順
+      label: Steps to reproduce
       placeholder: |
-        1. OpenClawRunを起動
-        2. Gateway Stopを押す
-        3. Gateway Restartを押す
+        1. Open OpenClawRun
+        2. Click Gateway Stop
+        3. Click Gateway Restart
+        4. See error
     validations:
       required: true
 
@@ -27,7 +41,7 @@ body:
     id: app_version
     attributes:
       label: OpenClawRun version
-      placeholder: v0.1.0
+      placeholder: v0.1.2
 
   - type: input
     id: openclaw_version
@@ -39,13 +53,13 @@ body:
     id: macos
     attributes:
       label: macOS version
-      placeholder: macOS 14.7
+      placeholder: macOS 14.7 / 15.x
 
   - type: textarea
     id: diagnostics
     attributes:
-      label: Diagnostics
-      description: OpenClawRunの「Copy Diagnostics」を貼り付け
+      label: Diagnostics (optional)
+      description: Paste output from "Copy Diagnostics" in OpenClawRun
       render: text
     validations:
       required: false
