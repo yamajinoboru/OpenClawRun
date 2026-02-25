@@ -5,6 +5,9 @@ It’s a convenience tool for everyday operations, whether you’re technical or
 
 **Languages:** [English](./README.md) | [日本語](./README.ja.md) | [简体中文](./README.zh-Hans.md) | [繁體中文](./README.zh-Hant.md) | [Português (Brasil)](./README.pt-BR.md)
 
+![OpenClawRun menu screenshot](./assets/menu-screenshot.png)
+
+
 ## Download
 
 👉 **Get the latest DMG**  

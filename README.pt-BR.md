@@ -5,6 +5,9 @@ OpenClawRun é um app de barra de menu para macOS que permite gerenciar o OpenCl
 
 **Idiomas:** [English](./README.md) | [日本語](./README.ja.md) | [简体中文](./README.zh-Hans.md) | [繁體中文](./README.zh-Hant.md) | [Português (Brasil)](./README.pt-BR.md)
 
+![Captura do menu do OpenClawRun](./assets/menu-screenshot.png)
+
+
 ## Download
 
 👉 **Baixar o DMG mais recente**  

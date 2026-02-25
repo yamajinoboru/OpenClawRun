@@ -5,6 +5,9 @@ OpenClawRun 是一款 macOS 選單列應用程式，讓你**不必開啟終端�
 
 **語言:** [English](./README.md) | [日本語](./README.ja.md) | [简体中文](./README.zh-Hans.md) | [繁體中文](./README.zh-Hant.md) | [Português (Brasil)](./README.pt-BR.md)
 
+![OpenClawRun 選單截圖](./assets/menu-screenshot.png)
+
+
 ## Download
 
 👉 **下載最新 DMG**  

@@ -5,6 +5,9 @@ OpenClawRun 是一款 macOS 菜单栏应用，可让你**无需打开终端**就
 
 **语言:** [English](./README.md) | [日本語](./README.ja.md) | [简体中文](./README.zh-Hans.md) | [繁體中文](./README.zh-Hant.md) | [Português (Brasil)](./README.pt-BR.md)
 
+![OpenClawRun 菜单截图](./assets/menu-screenshot.png)
+
+
 ## Download
 
 👉 **下载最新 DMG**  
