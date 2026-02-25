@@ -20,16 +20,43 @@ It’s a convenience tool for everyday operations, whether you’re technical or
 2. Launch OpenClawRun (menu bar icon appears)
 3. Click `Start Gateway`, then open `Open Chat` / `Open Dashboard`
 
-## What you can do
+## First 3-minute checklist
 
-- Run `openclaw gateway start / restart / stop / status`
-- Check localhost connectivity (`127.0.0.1:18789`)
-- Automatic background diagnostics every 30 seconds
-- Auto-recovery (up to 2 attempts)
-- Emergency Recovery (forced recovery)
-- Copy diagnostics info
-- Open issue report flow quickly
-- Multi-language UI (ja / en / zh-Hans / zh-Hant / pt-BR)
+- [ ] Menu bar icon is visible
+- [ ] `Gateway Status` is reachable
+- [ ] `Open Chat` opens correctly
+- [ ] `Open Dashboard` opens correctly
+
+## What OpenClawRun does
+
+- Runs `openclaw gateway start / restart / stop / status`
+- Checks localhost connectivity (`127.0.0.1:18789`)
+- Runs automatic background diagnostics every 30 seconds
+- Performs auto-recovery (up to 2 attempts)
+- Provides Emergency Recovery (forced recovery)
+- Copies diagnostics info quickly
+- Opens issue report flow quickly
+- Supports multi-language UI (ja / en / zh-Hans / zh-Hant / pt-BR)
+
+## What OpenClawRun does not do
+
+- It does **not** send your chat content to external services by itself
+- It does **not** require Terminal in normal daily use
+- It does **not** require Screen Recording, Accessibility, or Automation permissions
+
+## Permissions (why they are needed)
+
+- Standard app execution permission (Gatekeeper check for downloaded apps)
+- Localhost access (`127.0.0.1`) to talk to OpenClaw Gateway
+
+If macOS blocks first launch, use: `System Settings → Privacy & Security → Open Anyway`.
+
+## Troubleshooting (60 seconds)
+
+1. Run `Emergency Recovery` from the menu bar
+2. Retry `Start Gateway`
+3. Open `Open Chat` or `Open Dashboard` again
+4. If still failing, copy diagnostics info and report an issue
 
 ## FAQ
 

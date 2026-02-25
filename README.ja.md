@@ -20,6 +20,13 @@ OpenClawRun は、OpenClaw Gateway を**ターミナルなしで**管理でき�
 2. OpenClawRunを起動（メニューバーにアイコン表示）
 3. `Start Gateway` を押し、`Open Chat` / `Open Dashboard` を開く
 
+## 最初の3分チェック
+
+- [ ] メニューバーにアイコンが表示される
+- [ ] `Gateway Status` が確認できる
+- [ ] `Open Chat` が開ける
+- [ ] `Open Dashboard` が開ける
+
 ## できること
 
 - `openclaw gateway start / restart / stop / status` の実行
@@ -30,6 +37,27 @@ OpenClawRun は、OpenClaw Gateway を**ターミナルなしで**管理でき�
 - 診断情報コピー
 - Issue報告導線
 - 多言語UI（ja / en / zh-Hans / zh-Hant / pt-BR）
+
+## しないこと
+
+- チャット内容を勝手に外部送信しない
+- 日常利用でターミナル操作を必須にしない
+- 画面収録 / アクセシビリティ / Automation 権限を要求しない
+
+## 権限について（なぜ必要か）
+
+- 通常のアプリ実行権限（ダウンロードアプリのGatekeeper確認）
+- OpenClaw Gateway と通信するための localhost (`127.0.0.1`) アクセス
+
+初回起動がブロックされた場合は、
+`システム設定 → プライバシーとセキュリティ → このまま開く` を選んでください。
+
+## トラブル時の60秒手順
+
+1. メニューバーから `Emergency Recovery` を実行
+2. `Start Gateway` を再実行
+3. `Open Chat` または `Open Dashboard` を再オープン
+4. まだ解決しなければ診断情報をコピーして Issue 報告
 
 ## FAQ
 

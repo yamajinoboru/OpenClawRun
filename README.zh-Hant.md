@@ -20,7 +20,14 @@ OpenClawRun 是一款 macOS 選單列應用程式，讓你**不必開啟終端�
 2. 啟動 OpenClawRun（選單列會出現圖示）
 3. 點擊 `Start Gateway`，再開啟 `Open Chat` / `Open Dashboard`
 
-## 功能
+## 前 3 分鐘檢查清單
+
+- [ ] 選單列圖示已顯示
+- [ ] 可查看 `Gateway Status`
+- [ ] `Open Chat` 可正常開啟
+- [ ] `Open Dashboard` 可正常開啟
+
+## 可以做什麼
 
 - 執行 `openclaw gateway start / restart / stop / status`
 - 檢查 localhost 連線（`127.0.0.1:18789`）
@@ -30,6 +37,27 @@ OpenClawRun 是一款 macOS 選單列應用程式，讓你**不必開啟終端�
 - 複製診斷資訊
 - 快速開啟 Issue 回報流程
 - 多語系 UI（ja / en / zh-Hans / zh-Hant / pt-BR）
+
+## 不會做什麼
+
+- 不會自行把聊天內容傳送到外部服務
+- 日常使用不要求開啟終端機
+- 不要求螢幕錄製、輔助使用或 Automation 權限
+
+## 權限說明（為何需要）
+
+- 標準應用程式啟動權限（下載 App 的 Gatekeeper 驗證）
+- 存取 localhost（`127.0.0.1`）以連接 OpenClaw Gateway
+
+若首次啟動被系統阻擋，請到：
+`系統設定 → 隱私權與安全性 → 仍要開啟`。
+
+## 疑難排解（60 秒）
+
+1. 在選單列執行 `Emergency Recovery`
+2. 重新執行 `Start Gateway`
+3. 再次開啟 `Open Chat` 或 `Open Dashboard`
+4. 若仍失敗，請複製診斷資訊並提交 Issue
 
 ## FAQ
 
