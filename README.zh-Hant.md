@@ -1,31 +1,43 @@
-# OpenClawRun（繁體中文）
+# OpenClawRun
 
-[← 語言選擇](./README.md)
+OpenClawRun 是一款 macOS 選單列應用程式，讓你**不必開啟終端機**就能管理 OpenClaw Gateway。  
+不論是否為工程師，都能更輕鬆地進行日常操作。
 
-OpenClawRun 是一個 macOS 選單列應用，可在不使用終端指令的情況下管理 OpenClaw Gateway。
+**語言:** [English](./README.md) | [日本語](./README.ja.md) | [简体中文](./README.zh-Hans.md) | [繁體中文](./README.zh-Hant.md) | [Português (Brasil)](./README.pt-BR.md)
 
-## 選單預覽
+## Download
 
-![OpenClawRun menu](./assets/menu-screenshot.png)
+👉 **下載最新 DMG**  
+<https://github.com/yamajinoboru/OpenClawRun/releases/latest>
 
-## 發佈策略
-- 此倉庫僅用於**發佈與支援**
-- 原始碼為閉源
-- 安裝檔透過 [Releases](../../releases) 發佈
+- 發佈格式：DMG
+- 安裝方式：打開 DMG，將 OpenClawRun 移到 Applications
+- 啟動後：透過選單列圖示操作 Gateway（Start / Restart / Stop）
 
-## 下載
-1. 開啟 [Releases](../../releases)
-2. 下載最新的 `OpenClawRun-*.dmg`
-3. 將 App 拖曳到 Applications
+## 3 步快速開始
 
-## 問題回報
-- [Issues](../../issues/new/choose)
-- 建議提供:
-  - macOS 版本
-  - OpenClawRun 版本
-  - OpenClaw 版本（`openclaw --version`）
-  - OpenClawRun 的 `Copy Diagnostics` 輸出
+1. 由上方連結下載最新 DMG
+2. 啟動 OpenClawRun（選單列會出現圖示）
+3. 點擊 `Start Gateway`，再開啟 `Open Chat` / `Open Dashboard`
 
-## 需求
-- macOS 14+
-- OpenClaw Gateway 預設位址: `127.0.0.1:18789`
+## 功能
+
+- 執行 `openclaw gateway start / restart / stop / status`
+- 檢查 localhost 連線（`127.0.0.1:18789`）
+- 每 30 秒自動背景診斷
+- 自動復原（最多 2 次）
+- Emergency Recovery（強制復原）
+- 複製診斷資訊
+- 快速開啟 Issue 回報流程
+- 多語系 UI（ja / en / zh-Hans / zh-Hant / pt-BR）
+
+## FAQ
+
+- **啟動後仍然沒有反應**  
+  請從選單列執行 `Emergency Recovery`。
+
+- **Stop/Restart 按鈕無法點擊**  
+  Gateway 停止時會自動停用。請先執行 `Start Gateway`。
+
+- **要在哪裡回報問題？**  
+  <https://github.com/yamajinoboru/OpenClawRun/issues/new/choose>

@@ -1,31 +1,43 @@
-# OpenClawRun (日本語)
+# OpenClawRun
 
-[← Language chooser](./README.md)
+OpenClawRun は、OpenClaw Gateway を**ターミナルなしで**管理できる macOS メニューバーアプリです。  
+エンジニア/非エンジニアを問わず、日常運用をラクにするための便利ツールです。
 
-OpenClawRun は、OpenClaw Gateway をターミナル操作なしで扱うための macOS メニューバーアプリです。
+**言語:** [English](./README.md) | [日本語](./README.ja.md) | [简体中文](./README.zh-Hans.md) | [繁體中文](./README.zh-Hant.md) | [Português (Brasil)](./README.pt-BR.md)
 
-## メニュープレビュー
+## Download
 
-![OpenClawRun menu](./assets/menu-screenshot.png)
+👉 **最新DMGをダウンロード**  
+<https://github.com/yamajinoboru/OpenClawRun/releases/latest>
 
-## 配布方針
-- このリポジトリは **配布・サポート専用** です
-- ソースコードは非公開（closed source）運用です
-- バイナリは [Releases](../../releases) で配布します
+- 配布形式: DMG
+- インストール: DMGを開いて OpenClawRun を Applications に移動
+- 起動後: メニューバーから Gateway を操作（Start / Restart / Stop）
 
-## ダウンロード
-1. [Releases](../../releases) を開く
-2. 最新の `OpenClawRun-*.dmg` をダウンロード
-3. アプリを Applications にドラッグ
+## 3ステップで使う
 
-## 不具合報告
-- [Issues](../../issues/new/choose)
-- あると助かる情報:
-  - macOS バージョン
-  - OpenClawRun バージョン
-  - OpenClaw バージョン（`openclaw --version`）
-  - OpenClawRun の `Copy Diagnostics`
+1. 上のリンクから最新DMGをダウンロード
+2. OpenClawRunを起動（メニューバーにアイコン表示）
+3. `Start Gateway` を押し、`Open Chat` / `Open Dashboard` を開く
 
-## 前提
-- macOS 14+
-- OpenClaw Gateway default: `127.0.0.1:18789`
+## できること
+
+- `openclaw gateway start / restart / stop / status` の実行
+- localhost (`127.0.0.1:18789`) 疎通チェック
+- 30秒ごとのバックグラウンド診断
+- 自動復旧（最大2回）
+- Emergency Recovery（強制復旧）
+- 診断情報コピー
+- Issue報告導線
+- 多言語UI（ja / en / zh-Hans / zh-Hant / pt-BR）
+
+## FAQ
+
+- **起動したのにうまく反応しない**  
+  メニューバーから `Emergency Recovery` を実行してください。
+
+- **Stop/Restart が押せない**  
+  Gateway停止中は無効になります。先に `Start Gateway` を実行してください。
+
+- **不具合報告先は？**  
+  <https://github.com/yamajinoboru/OpenClawRun/issues/new/choose>

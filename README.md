@@ -1,50 +1,43 @@
 # OpenClawRun
 
-OpenClawRun is a macOS menu bar app for managing OpenClaw Gateway without terminal commands.
+OpenClawRun is a macOS menu bar app for managing OpenClaw Gateway **without opening Terminal**.
+It’s a convenience tool for everyday operations, whether you’re technical or not.
 
-## Menu Preview
-
-![OpenClawRun menu](./assets/menu-screenshot.png)
-
-## Languages
-- [English](./README.md)
-- [日本語](./README.ja.md)
-- [简体中文](./README.zh-Hans.md)
-- [繁體中文](./README.zh-Hant.md)
-- [Português (Brasil)](./README.pt-BR.md)
+**Languages:** [English](./README.md) | [日本語](./README.ja.md) | [简体中文](./README.zh-Hans.md) | [繁體中文](./README.zh-Hant.md) | [Português (Brasil)](./README.pt-BR.md)
 
 ## Download
-1. Open [Releases](../../releases)
-2. Download the latest `OpenClawRun-*.dmg`
-3. Open the DMG and drag **OpenClawRun** to **Applications**
+
+👉 **Get the latest DMG**  
+<https://github.com/yamajinoboru/OpenClawRun/releases/latest>
+
+- Distribution format: DMG
+- Install: Open the DMG and move OpenClawRun to Applications
+- After launch: Use the menu bar icon to control Gateway (Start / Restart / Stop)
+
+## Quick Start (3 steps)
+
+1. Download the latest DMG from the link above
+2. Launch OpenClawRun (menu bar icon appears)
+3. Click `Start Gateway`, then open `Open Chat` / `Open Dashboard`
+
+## What you can do
+
+- Run `openclaw gateway start / restart / stop / status`
+- Check localhost connectivity (`127.0.0.1:18789`)
+- Automatic background diagnostics every 30 seconds
+- Auto-recovery (up to 2 attempts)
+- Emergency Recovery (forced recovery)
+- Copy diagnostics info
+- Open issue report flow quickly
+- Multi-language UI (ja / en / zh-Hans / zh-Hant / pt-BR)
 
 ## FAQ
-- **How do I install from DMG?**
-  - Open the DMG window
-  - Drag `OpenClawRun.app` onto the `Applications` shortcut
-  - Eject the DMG and launch OpenClawRun from Applications
 
-- **Do I need terminal commands to use this app?**
-  - No. Day-to-day gateway operations are available from the menu bar.
+- **It launched, but things still don’t respond.**  
+  Run `Emergency Recovery` from the menu bar.
 
-- **How do I get support?**
-  - Use [Issues](../../issues/new/choose) and include diagnostics when possible.
+- **Stop/Restart is disabled.**  
+  That’s expected when Gateway is stopped. Run `Start Gateway` first.
 
-## Report issues
-- [Issues](../../issues/new/choose)
-- Helpful details:
-  - macOS version
-  - OpenClawRun version
-  - OpenClaw version (`openclaw --version`)
-  - `Copy Diagnostics` output from OpenClawRun
-
-## Requirements
-- macOS 14+
-- OpenClaw Gateway default: `127.0.0.1:18789`
-
-## Source policy
-- Distribution/support repo only
-- Source code is private (closed source)
-
-## Author
-- [@yamaji on X](https://x.com/yamaji)
+- **Where do I report bugs?**  
+  <https://github.com/yamajinoboru/OpenClawRun/issues/new/choose>
